@@ -10,7 +10,7 @@ export async function currentWeatherApi(lat, lon) {
 }
 
 export async function currentWeatherPollApi(lat, lon) {
-    return await (await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&lang=tr&appid=${key}`)).json()
+    return await (await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&lang=tr&appid=${key}`)).json()
 }
 
 export async function fiveDaysForecastApi(lat, lon) {
