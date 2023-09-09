@@ -3,6 +3,9 @@ import { BiSolidLeaf, BiSearch } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { geoCoding, currentWeatherApi, currentWeatherPollApi, fiveDaysForecastApi } from "@/helpers/ApiHelpers";
 
+export const dynamic = 'force-dynamic'
+
+
 export default function Home() {
   const [city, setCity] = useState("istanbul");
   const [currentWeather, setCurrentWeather] = useState(null);
